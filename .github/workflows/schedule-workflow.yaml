@@ -1,0 +1,11 @@
+name: cron workfolw
+on: 
+    schedule:
+        - cron: "0/5 * * * *"
+jobs:
+    cron-job:
+      runs-on: ubuntu-latest    
+      steps:
+        - name: cron
+          run: echo "hello" >> test.txt
+
