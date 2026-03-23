@@ -1,6 +1,12 @@
 on:
+  push:
+    branches:
+      - "main"
+  pull_request:
+     branches-ignore:
+       - "features/**"
   repository_dispatch:
-    types: [test]
+    types: [build]
 jobs: 
     simple-java-app:
       runs-on: ubuntu-latest
