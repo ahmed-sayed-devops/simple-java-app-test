@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: test
         run: |
-          depracated = true
+          depracated= true
           if [[ depracated ]]; then
             echo " ::warning::Deprecated Function Found"
           fi
